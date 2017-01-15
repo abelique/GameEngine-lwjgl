@@ -19,6 +19,7 @@ public class DisplayManager {
 			Display.setDisplayMode(new DisplayMode(WIDTH, HEIGTH));
 			Display.create(new PixelFormat(), attribs);
 			Display.setTitle("our first display");
+			Display.setResizable(true);
 		} catch (LWJGLException e) {
 			e.printStackTrace();
 		}
